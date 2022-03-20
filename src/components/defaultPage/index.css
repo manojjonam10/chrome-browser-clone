@@ -1,0 +1,59 @@
+.input-div {
+    display: flex;
+    align-items: center;
+    background-color:white;
+    border-radius: 1.5rem;
+    font-family: inherit;
+    font-size: inherit;
+    height: 2.5rem;
+    outline: none;
+    position: relative;
+    width: 28rem;
+    border: 0.1rem solid #D3D3D3;
+    box-shadow: 0 0 0 0.01rem #D3D3D3;
+    z-index: 2;
+}
+.input-search {
+    width: 83%;
+    height: 90%;
+    outline: none;
+    border: none;
+    padding-left: 2%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.visited-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f3f4;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+}
+.favicon {
+    width:1.2rem;
+    height: 1.2rem;
+}
+
+.visited-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.visited-text {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.view-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 28rem;
+    height: 8rem;
+    margin-top: 2.2rem;
+    margin-bottom: 3rem;
+}

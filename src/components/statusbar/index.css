@@ -1,0 +1,35 @@
+.statusbar {
+    width:100vw;
+    height:4vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    border-bottom: 0.02rem solid #D3D3D3;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.statusbar-input-div {
+    background-color: #F5F5F5;
+    width: 77vw;
+    margin-left: 0.7vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0.6vw;
+    border-radius: 2vw;
+    height: 1.5rem;
+    outline: none;
+    border: none;
+}
+
+.statusbar-input {
+    border:none;
+    outline: none;
+    background-color: #F5F5F5;
+    width: 90%;
+    font-size: 0.9rem;
+    color: #323232;
+    margin-left: 0.5vw;
+}
