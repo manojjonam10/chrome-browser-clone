@@ -13,9 +13,6 @@ const Browser = () => {
     const {setLoading} = chromeActions
     const currentURL = tabs[currentTab] ? tabs[currentTab].url[tabs[currentTab].selectedIndex]:''
 
-
-
-
     const onRefresh = () => {
         let iframe = document.getElementById('chromeIframe')
         iframe.src = iframe.src
@@ -31,11 +28,11 @@ const Browser = () => {
                 currentURL.length === 0 ?
                     <DefaultPage/> :
 
-                    <div style={{width:'100%',height:'100%'}}>
+                    <div className={'iframe-style'}>
 
                         <iframe  onLoad={()=>dispatch(setLoading(false))}
 
-                            id={'chromeIframe'}  style={{width:'100%',height:'100%'}} src={currentURL}/>
+                            id={'chromeIframe'} className={'iframe-style'} src={currentURL}/>
 
                     </div>
 

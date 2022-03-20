@@ -20,9 +20,7 @@ const Statusbar = (props) => {
                 const index = tabs[currentTab].selectedIndex
                 document.getElementById('statusInput').value = url[index]
             }
-        }
-
-    },[currentTab, tabs])
+        }},[currentTab, tabs])
 
 
     const statusURL = (e) => {
@@ -61,14 +59,12 @@ const Statusbar = (props) => {
         }
     }
 
-
     const checkForward = () =>{
         if (tabs[currentTab]){
             return tabs[currentTab].selectedIndex < tabs[currentTab].url.length-1
         }
         return false
     }
-
 
     return (
         <div className={'statusbar'}>

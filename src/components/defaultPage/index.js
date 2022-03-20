@@ -3,11 +3,10 @@ import Google from '../../assets/images/google.jpeg';
 import './index.css'
 import {AiOutlineSearch} from 'react-icons/ai';
 import {IoIosMic} from 'react-icons/io'
-import {useSelector,useDispatch} from "react-redux";
+import {useSelector} from "react-redux";
 
 const DefaultPage = () => {
     const selectorState = useSelector(state => state.chromeData)
-    console.log(selectorState.URLList)
 
     const getDomainName = (url) => {
         if (url.length > 0){
@@ -54,10 +53,7 @@ const DefaultPage = () => {
                    })
                 }
 
-
             </div>
-
-
         </div>
     )
 }
